@@ -2,10 +2,24 @@
 
 body
 {
-    background-color: #D38236;
+    background-color: #6b0d1c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
-h2
+h2, h3, h4
 {
-    color: #000100;
+    color: #e4e1e1;
+    text-align: center;
+}
+
+p
+{
+    color: #e4e1e1;
+}
+
+
+figure
+{
+    text-align: center;
+    color: #e4e1e1;
 }
