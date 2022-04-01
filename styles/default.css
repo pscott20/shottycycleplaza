@@ -2,7 +2,7 @@
 
 body
 {
-    background-color: #6b0d1c;
+    background-color: #ef6b36;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
@@ -17,9 +17,49 @@ p
     color: #e4e1e1;
 }
 
+.brands
+{
+    text-align: left;
+}
+
+.quote
+{
+    text-align: center;
+}
+
 
 figure
 {
     text-align: center;
     color: #e4e1e1;
+}
+
+.navbar 
+{
+    overflow: hidden;
+    background-color: #092955;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px
+}
+  
+.navbar a
+{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover
+{
+    background-color: #ef6b36;
+}
+  
+.navbar a.active 
+{
+    text-align: left;
+    color: white;
 }
