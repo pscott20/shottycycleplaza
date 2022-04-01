@@ -4,34 +4,31 @@
     <meta charset="UTF-8" />
     <title>Shotty Cycle Plaza</title>
     <link href="styles/default.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <header>
       <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2 class="brands">
-          Honda
-        </h2>
-        <h2 class="brands">
-          Yamaha
-        </h2>
-        <h2 class="brands">
-          Suzuki
-        </h2>
-        <h2 class="brands">
-          Kawasaki
-        </h2>
-        <figure>
-          <img src="#"><!---->
-          <figcaption>
-            <!--logo-->
-          </figcaption>
-        </figure> 
-        <p class="quote">
-          "We will fix it, kinda" - Owner Jordan Thomas
-        </p>
+      <div class="w3-row">
+        <div class="w3-col m4 l2">
+          <h2 id="honda">Honda</h2>
+          <h2 id="kawasaki">Kawasaki</h2>
+          <h2 id="suzuki">Suzuki</h2>
+          <h2 id="yamaha">Yamaha</h2>
+        </div>
+        <div class="w3-col m8 l7">
+          <figure>
+            <img id="collage" src="/images/collage.png">
+            <figcaption>
+            </figcaption>
+          </figure> 
+        </div>
+      </div>
     </main>
     <footer>
       <div data-include="components/footer.html"></div>
