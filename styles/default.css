@@ -24,7 +24,7 @@ h2, h3, h4
 
 p
 {
-    color: #e4e1e1;
+    color: #000000;
 }
 
 figure
@@ -102,7 +102,7 @@ figure
     font-family: 'Baumans', 'Franklin Gothic Medium', sans-serif;
     color: black;
     margin-left: 10px;
-    margin-top: 30%;
+    margin-top: 7%;
     margin-bottom: 20%;
 }
 
@@ -128,6 +128,11 @@ figure
 
 .w3-col #collage
 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.w3-col p
+{
+    margin-left: 10px;
 }
 
