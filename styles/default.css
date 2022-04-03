@@ -162,3 +162,46 @@ figure
     overflow: scroll; 
     margin: 5%;
 }
+
+.customers-container
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.customers-container > div
+{
+    margin: 1%;
+}
+
+.select-services 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    background-color: #999898;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+}
+
+table
+{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #b2b2b2;
+  }
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+th
+{
+    background-color: #ef6b36;
+}

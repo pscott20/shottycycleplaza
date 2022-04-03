@@ -14,9 +14,94 @@
       <div data-include="components/header.html"></div>
     </header>
     <main>
+      <h1>Customers</h1>
       <!--TODO: this page has a form submission area. can it store them? and if possible (maybe fake ones) a table of reviews)-->
       <div class="customers-container">
-        
+        <div class="review-form">
+          <h3>Reviews</h3>
+          <form action="#">
+            <label for="fname">Name:</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="review">Review:</label>
+            <br>
+            <input type="text" id="review" name="review">
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="review-table">
+          <table>
+            <tr>
+              <th>
+                Reviews
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Random Customer
+              </td>
+            </tr>
+            <tr>
+            <td>
+              Wow, I received great service! They knew right away that I blew my motor by putting in
+              too big of a sparkplug. They replaced my engine now the old Kawi is running great!
+            </td>
+            <tr>
+              <td>
+                Random Customer 2
+              </td>
+            </tr>
+            <tr>
+              <td>
+                They were quickly able to change my tire and I was on my way!
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="services-form">
+          <h3>Request Service</h3>
+          <form action="#">
+            <!--Make this a dropdown-->
+            <label for="make">Make:</label>
+            <br>
+            <input type="text" id="make" name="make" required>
+            <br>
+            <!--TODO: If reasonable make this a dropdown-->
+            <!--TODO: Need to make this form have required-->
+            <label for="model">Model:</label>
+            <br>
+            <input type="text" id="model" name="model" required>
+            <br>
+            <label for="year">Year:</label>
+            <br>
+            <input type="number" id="year" name="year" maxlength="4" required>
+            <br>
+            <label for="mileage">Mileage:</label>
+            <br>
+            <input type="number" id="mileage" name="mileage" required>
+            <br>
+            <br>
+            <div class="select-services">
+              <label for="service">Select Services</label>
+              <br>
+              <label for="oil">Oil & Filter Change</label>
+              <input type="checkbox" id="oil" name="oil">
+              <label for="fluids">Fluid Service</label>
+              <input type="checkbox" id="fluids" name="fluids">
+              <label for="tire">Tire Change</label>
+              <input type="checkbox" id="tire" name="tire">
+              <label for="engine">Engine Service</label>
+              <input type="checkbox" id="engine" name="engine">
+              <label for="noise">It's making a wierd noise (Describe noise in additional information section)</label>
+              <input type="checkbox" id="noise" name="noise">
+              <label for="additional">Additional Information (Optional)</label>
+              <input type="text" id="additional" name="additional">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div> 
       </div>
     </main>
     <footer>
