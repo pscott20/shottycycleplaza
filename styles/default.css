@@ -154,3 +154,11 @@ figure
     justify-content: center;
     text-align: center;
 }
+
+.projects-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll; 
+    margin: 5%;
+}
