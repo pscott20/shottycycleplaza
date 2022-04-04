@@ -205,3 +205,19 @@ th
 {
     background-color: #ef6b36;
 }
+
+.container-store
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.container-store > div
+{
+    margin: 20px;
+    background-color: rgb(78, 77, 77);
+    border-radius: 100px;
+}
+
