@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -16,7 +18,15 @@
     <main>
       <h1>Merchandise</h1>
       <div class="container-store">
-        <!--TODO: add photos for each item available on site-->
+        <ul class="bxslider">
+          <li><a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="/images/store/scp-shirt_transparent(500x446).png"></a></li>
+          <li><a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard_of_wyandotte_tshirt(transparent)(500x443).png"></a></li>
+        </ul>
+
+
+
+
+        <!--
         <div class="scp_logo_tshirt">
           <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="/images/store/scp-shirt_transparent(500x446).png"></a>
         </div>
@@ -41,11 +51,13 @@
         <div class="suzuki_guy_tshirt">
           <a href="https://www.teepublic.com/t-shirt/29084496-suzuki-guy?store_id=1274390"><img src="images/store/suzuki_guy_shirt_(transparent)(500x486).png"></a>
         </div>
+      -->
       </div>  
     </main>
     <footer>
       <div data-include="components/footer.html"></div>
     </footer>
+    <script src="/scripts/default_scripts.js"></script>
     <script src="/scripts/include.js">
     </script>
   </body>
