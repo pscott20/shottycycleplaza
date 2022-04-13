@@ -221,3 +221,8 @@ th
     border-radius: 100px;
 }
 
+.container-store img
+{
+    margin-left: 50%; 
+}
+
