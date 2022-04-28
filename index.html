@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" 
+        crossorigin="anonymous">
+    </script>
   </head>
   <body>
     <header>
@@ -19,17 +22,42 @@
           <img src="images/scp_banner(750x250).png">
           <figcaption></figcaption>
         </figure>
-        <h1>Welcome</h1>
-        <figure>
-          <img id="collage" src="images/brands_collage(550x550).png" alt="Brands Collage">
-          <figcaption> </figcaption>
-        </figure>
+        <h1>Welcome to Our Shop!</h1>
+        <div class="slideshow-container">
+            <div class="slideshow-slides fade">
+                <div class="slide-number">1/5</div>
+                <img src="images/homepage_slideshow/slideshow1.png" alt="Yamaha motorcycle logo">
+            </div>
+            <div class="slideshow-slides fade">
+                <div class="slide-number">2/5</div>
+                <img src="images/homepage_slideshow/slideshow2.png" alt="Honda motorcycle logo">
+            </div>
+            <div class="slideshow-slides fade">
+                <div class="slide-number">3/5</div>
+                <img src="images/homepage_slideshow/slideshow3.png" alt="SCP Owner">
+            </div>
+            <div class="slideshow-slides fade">
+                <div class="slide-number">4/5</div>
+                <img src="images/homepage_slideshow/slideshow4.png" alt="SCP T-Shirt">
+                </div>
+            <div class="slideshow-slides fade">
+                <div class="slide-number">5/5</div>
+                <img src="images/homepage_slideshow/slideshow5.png" alt="Honda motorcycle handlebars">
+            </div>
+        </div>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
       </div>
     </main>
     <footer>
       <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/include.js">
+    </script>
+    <script src="scripts/slideshow.js">
     </script>
   </body>
 </html>
