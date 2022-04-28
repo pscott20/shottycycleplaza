@@ -234,7 +234,7 @@ th
   align-items: center;
 }
 
-#project_1 li
+.projects_list li
 {
   align-self: center;
   display: inline;

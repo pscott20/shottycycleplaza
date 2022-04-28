@@ -1,22 +1,22 @@
 $(document).ready(function()
 {
     // preload the image for each link
-    $("#project_1 a").each(function()
+    $("#current_project a").each(function()
     {
         var swappedImage = new Image();
         swappedImage.src = $(this).attr('href');
     });
 
     // set up the event handlers for each link
-    $("#project_1 a").click(function(evt)
+    $("#current_project a").click(function(evt)
     {
         //swap image
         var imageURL = $(this).attr("href");
-        $("#main_image_1").attr("src", imageURL);
+        $("#current_project_main_image").attr("src", imageURL);
 
         //swap caption
         var caption = $(this).attr("title");
-        $("#caption_1").text(caption);
+        $("#current_project_caption").text(caption);
 
         //cancel the default action of the link
         evt.preventDefault(); //jQuery cross-browser method
@@ -30,22 +30,22 @@ $(document).ready(function()
 $(document).ready(function()
 {
     // preload the image for each link
-    $("#project_2 a").each(function()
+    $("#former_project a").each(function()
     {
         var swappedImage = new Image();
         swappedImage.src = $(this).attr('href');
     });
 
     // set up the event handlers for each link
-    $("#project_2 a").click(function(evt)
+    $("#former_project a").click(function(evt)
     {
         //swap image
         var imageURL = $(this).attr("href");
-        $("#main_image_2").attr("src", imageURL);
+        $("#former_project_main_image").attr("src", imageURL);
 
         //swap caption
         var caption = $(this).attr("title");
-        $("#caption_2").text(caption);
+        $("#former_project_caption").text(caption);
 
         //cancel the default action of the link
         evt.preventDefault(); //jQuery cross-browser method
