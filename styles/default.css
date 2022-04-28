@@ -226,3 +226,19 @@ th
     margin-left: 50%; 
 }
 
+/* Image Swap Application */
+.projects-container h1, h2, ul, p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project_1 li
+{
+  align-self: center;
+  display: inline;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+}
+
