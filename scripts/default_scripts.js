@@ -1,3 +1,14 @@
+const reviewText = document.getElementById('reviewText');
+const reviewName = document.getElementById('reviewName');
+
+const reviewsArray = {
+  reviewName: reviewName.value,
+  reviewText: reviewText.value    
+};
+
+const reviews = JSON.parse(localStorage.getItem('reviewArray')) || []; //Converts the JSON string into an object or returns an empty array
+
+
 //bxSlider used on Store page
 //$(document).ready(function(){
 //    $('.bxslider').bxSlider();
@@ -17,18 +28,28 @@
 //  });
 //});
 
+//Only activate button once both forms have entries. Only allow the user to submit one entry
+reviewText.addEventListener("keyup", () => {
+  submit.disabled = !reviewText.value;
+});
+
 setReviews = (e) => {
   e.preventDefault();
-  var review = document.getElementById('review')
-  localStorage.setItem('review', review.value);
-  var reviews = document.getElementById('reviews');
-  var storedReview = localStorage.getItem('review');
-  reviews.innerText = reviews.value; 
-  
-}
 
-getReviews = () => {
-  var reviews = document.getElementById('reviews');
-  var storedReview = localStorage.getItem('review');
-  reviews.innerText = storedReview.reviews; 
+  const reviewsArray = {
+    reviewName: reviewName.value,
+    reviewText: reviewText.value    
+  };
+
+  reviews.push(reviewsArray);
+  reviews.splice(5);
+  localStorage.setItem('reviews', JSON.stringify(reviews));
+
+  reviewList.innerHTML = reviews.map(reviewsArray => 
+    {
+      return `${reviewsArray.reviewName}  "${reviewsArray.reviewText}"<br>`;
+    })
+  .join("");
+
+  submit.disabled;
 }

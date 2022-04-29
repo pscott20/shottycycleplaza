@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
 	  <!--<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>-->
-    <script src="scripts/default_scripts.js"></script>
   </head>
   <body>
     <header>
@@ -18,25 +17,24 @@
     </header>
     <main>
       <h1>Customers</h1>
-      <!--TODO: this page has a form submission area. can it store them? and if possible (maybe fake ones) a table of reviews)-->
       <div class="customers-container">
         <div class="review-form">
           <h3>Reviews</h3>
-          <form>
-            <label for="review">Review:</label>
+          <form id="reviewForm">
+            <input type="text" id="reviewText" name="reviewText" placeholder="Enter your review">
             <br>
-            <input type="text" id="review" name="review" title="Please enter your review.">
+            <input type="text" id="reviewName" name="reviewName" placeholder="Enter your name">
             <br>
-            <input type="submit" value="Submit" onclick="setReviews(event)">
+            <input type="submit" id="submit" value="Submit" onclick="setReviews(event)" disabled>
           </form>
         </div>
         <div>
-          <ul id="reviews"></ul>
+          <ul id="reviewList"></ul>
         </div>
+        <!--This should export to and external file (JSON?)-->
         <div class="services-form">
           <h3>Request Service</h3>
           <form action="#">
-            <!--Make this a dropdown-->
             <label for="make">Make:</label>
             <br>
             <input type="text" id="make" name="make" title="Enter the make of your motorcycle." required>
@@ -78,7 +76,7 @@
     <footer>
       <div data-include="components/footer.html"></div>
     </footer>
-    <script src="scripts/include.js">
-    </script>
+    <script src="scripts/default_scripts.js"></script>
+    <script src="scripts/include.js"></script>
   </body>
 </html>
