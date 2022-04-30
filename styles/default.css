@@ -163,6 +163,8 @@ figure
     margin: 5%;
 }
 
+/* Customers Page*/
+
 .customers-container
 {
     display: flex;
@@ -174,6 +176,16 @@ figure
 .customers-container > div
 {
     margin: 1%;
+}
+
+#reviewList li
+{
+    list-style-type: none;
+    padding: 4px 3px 4px 3px; 
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
 }
 
 .select-services 

@@ -31,10 +31,9 @@
         <div>
           <ul id="reviewList"></ul>
         </div>
-        <!--This should export to and external file (JSON?)-->
         <div class="services-form">
           <h3>Request Service</h3>
-          <form action="#">
+          <form>
             <label for="make">Make:</label>
             <br>
             <input type="text" id="make" name="make" title="Enter the make of your motorcycle." required>
@@ -56,18 +55,18 @@
               <label for="service">Select Services</label>
               <br>
               <label for="oil">Oil & Filter Change</label>
-              <input type="checkbox" id="oil" name="oil">
-              <label for="fluids">Fluid Service</label>
-              <input type="checkbox" id="fluids" name="fluids">
+              <input type="checkbox" id="oil" name="oil" value="oil+filter_change" >
+              <label for="fluids">Total Fluid Change</label>
+              <input type="checkbox" id="fluids" name="fluids" value="total_fluid_change">
               <label for="tire">Tire Change</label>
-              <input type="checkbox" id="tire" name="tire">
+              <input type="checkbox" id="tire" name="tire" value="tire_change">
               <label for="engine">Engine Service</label>
-              <input type="checkbox" id="engine" name="engine">
+              <input type="checkbox" id="engine" name="engine" value="engine_service">
               <label for="noise">It's making a wierd noise (Describe noise in additional information section)</label>
-              <input type="checkbox" id="noise" name="noise">
+              <input type="checkbox" id="noise" name="noise" value="wierd_noise">
               <label for="additional">Additional Information (Optional)</label>
               <input type="text" id="additional" name="additional">
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" onclick="serviceForm(event)">
             </div>
           </form>
         </div> 
