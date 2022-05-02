@@ -2,16 +2,19 @@
 Brands Colors
 honda #c8102e / kawasaki #73A84A / suzuki #F7CD36 / yamaha #0e4bef
 */
-
-body,h1,h2,h3,h4,h5,h6,p,a
-{
-    font-family: 'Baumans', 'Franklin Gothic Medium', sans-serif;
-}
-
-body
+:root
 {
     background-color: #ef6b36;
-} 
+    font-size: 62.5%; /* This size is used because the default font size of most browsers is 16 pixels. 62.5% of 16 is 10. This way rem changes are increments of 10.*/
+}
+
+*
+{
+    box-sizing: border-box; /*If I add a border to a box then the border is included in the calculated size of the box.*/
+    font-family: 'Baumans', 'Franklin Gothic Medium', sans-serif;
+    margin: 0; /*This and padding gives us control over margins and padding*/
+    padding: 0;
+}
 
 /*Hide scrollbar for different browsers*/
 ::-webkit-scrollbar 
@@ -21,13 +24,7 @@ body
     scrollbar-width: none;  /* Firefox */
 }
 
-h1
-{
-    color: black;
-    text-align: center;
-}
-
-h2, h3, h4
+h1, h2, h3, h4
 {
     color: #e4e1e1;
     text-align: center;
@@ -43,6 +40,7 @@ figure
     text-align: center;
 }
 
+/* Navbar*/
 .navbar 
 {
     overflow: hidden;
@@ -80,6 +78,7 @@ figure
     padding-top: 8px;
 }
 
+/*Footer*/
 .footer
 {
     background-color: #092955;
@@ -108,20 +107,63 @@ figure
     padding: 3px;
 }
 
-.flex-container-index
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1%;
-    margin-bottom: 5%;
-}
-
+/*Instagram Logo*/
 .fa
 {
     color: #cd486b;
 }
 
+/*index.html container*/
+.flex-container-index
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slideshow-container
+{
+    margin: 1rem 0rem 10rem 0rem;
+}
+
+
+.projects-container h1, h2, ul, p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_list li
+{
+  align-self: center;
+  display: inline;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+}
+
+.slide-number
+{
+  color: #f2f2f2;
+  background-color: black;
+  font-size: 14px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  position: absolute;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*about.html container*/
 .about-container 
 {
     display: flex;
@@ -259,11 +301,9 @@ th
   color: #f2f2f2;
   background-color: black;
   font-size: 14px;
-  padding-right: 10px;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   position: absolute;
-  left: 34.40%;
 }
 
 .fade {
