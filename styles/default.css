@@ -31,7 +31,7 @@ figure
     text-align: center;
 }
 
-/*index.html container*/
+/*Index Page*/
 .flex-container-index
 {
     display: flex;
@@ -73,7 +73,7 @@ figure
   to {opacity: 1}
 }
 
-/*about.html container*/
+/*About Page*/
 .about-container {
     display: flex;
     overflow: scroll;
@@ -114,17 +114,23 @@ figure
     text-align: center;
 }
 
-/*Projects.html*/
-.projects-container
+/*Projects Page*/
+#projects-container
 {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll; 
-    margin: 5%;
+    margin-bottom: 10rem;
+}
+
+ul.projects_list
+{
+    padding: 1rem;
+}
+
+#projects-container p
+{
+    font-size: 2rem;
 }
 
 /* Customers Page*/
-
 .customers-container
 {
     display: flex;
@@ -182,6 +188,7 @@ th
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 1%;
     margin-bottom: 5%;
 }
@@ -198,38 +205,9 @@ th
     margin-left: 50%; 
 }
 
-/* Image Swap Application */
-.projects-container h1, h2, ul
+a.bx-pager-link.active
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    list-style-type: none;
 }
 
-.projects_list li
-{
-  align-self: center;
-  display: inline;
-  margin-left: 0.25%;
-  margin-right: 0.25%;
-}
 
-.slide-number
-{
-  color: #f2f2f2;
-  background-color: black;
-  font-size: 14px;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  position: absolute;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 2.0s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
