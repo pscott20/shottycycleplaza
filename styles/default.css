@@ -12,6 +12,8 @@ honda #c8102e / kawasaki #73A84A / suzuki #F7CD36 / yamaha #0e4bef
 {
     box-sizing: border-box; /*If I add a border to a box then the border is included in the calculated size of the box.*/
     font-family: 'Baumans', 'Franklin Gothic Medium', sans-serif;
+    color: #e4e1e1;
+    text-align: center;
     margin: 0; /*This and padding gives us control over margins and padding*/
     padding: 0;
 }
@@ -24,93 +26,9 @@ honda #c8102e / kawasaki #73A84A / suzuki #F7CD36 / yamaha #0e4bef
     scrollbar-width: none;  /* Firefox */
 }
 
-h1, h2, h3, h4
-{
-    color: #e4e1e1;
-    text-align: center;
-}
-
-p, h5
-{
-    color: #000000;
-}
-
 figure
 {
     text-align: center;
-}
-
-/* Navbar*/
-.navbar 
-{
-    overflow: hidden;
-    background-color: #092955;
-    width: 100%;
-    margin-top: 0px;
-}
-  
-.navbar a
-{
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 20px;
-    padding-bottom: 28px;
-    text-decoration: none;
-    font-size: 25px;
-}
-  
-.navbar a:hover
-{
-    background-color: #ef6b36;
-}
-  
-.navbar a.active 
-{
-    text-align: left;
-    color: white;
-}
-
-.navbar #icon
-{
-    padding-top: 8px;
-}
-
-/*Footer*/
-.footer
-{
-    background-color: #092955;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer p
-{
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    margin: 1px;
-    padding: 3px;
-}
-  
-.footer a
-{
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    margin: 1px;
-    padding: 3px;
-}
-
-/*Instagram Logo*/
-.fa
-{
-    color: #cd486b;
 }
 
 /*index.html container*/
@@ -121,18 +39,10 @@ figure
     align-items: center;
 }
 
-
+/*Slideshow*/
 .slideshow-container
 {
     margin: 1rem 0rem 10rem 0rem;
-}
-
-
-.projects-container h1, h2, ul, p
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .projects_list li
@@ -164,39 +74,47 @@ figure
 }
 
 /*about.html container*/
-.about-container 
-{
+.about-container {
     display: flex;
+    overflow: scroll;
+    margin-bottom: 15rem;
     flex-wrap: wrap;
-    overflow: scroll; 
-    margin: 5%;
-}
-  
-.about-text
-{
-    background-color: #c1552a;
-    width: 33%;
-    height: 50%;
-    justify-content: center;
-    text-align: justify;
-    padding: 10px;
-    border-radius: 25px;
-    margin-top: 10%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 
-.about-text p
+.about-items
 {
-    color: #d1cfcf;
+    width: 40%;
+    margin: 1rem;
+}
+  
+.about-items.about-text {
+    
+    background-color: #c1552a;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    padding-left: 1rem; 
+}
+
+.about-items.about-text p
+{
+    text-align: left;
+}
+
+.about-items.about-text a
+{
+    text-decoration: none;
 }
 
 .about-img
 {
-    width: 66%;
-    height: 50%;
     justify-content: center;
     text-align: center;
 }
 
+/*Projects.html*/
 .projects-container
 {
     display: flex;
@@ -281,7 +199,7 @@ th
 }
 
 /* Image Swap Application */
-.projects-container h1, h2, ul, p
+.projects-container h1, h2, ul
 {
   display: flex;
   justify-content: center;
