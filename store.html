@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles/bxslider.css">
+    <link rel="stylesheet" href="./styles/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
@@ -20,46 +20,29 @@
       <h1>Merchandise</h1>
       <div class="container-store">
         <div>
-          <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="images/store/scp_logo(300x300).png"></a>
-          <ul class="bxslider">
-            <li><img src="/images/store/scp-shirt_transparent(500x446).png"></li>
+          <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="images/store/scp/scp_logo.png"></a>
+          <ul class="slider">
+            <li><img src="/images/store/scp/shirt.png"></li>
+            <li><img src="/images/store/scp/sticker.png"></li>
+            <li><img src="/images/store/scp/mug.png"></li>
           </ul>
         </div>
         <div>       
-        <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wiz_of_wyandotte_logo_black_bkgnd.png"></a>
-        <ul class="bxslider">
-          <li><img src="images/store/wizard_of_wyandotte_tshirt(transparent)(500x443).png"></li>
-        </ul>
-
-
-
-
-        <!--
-        <div class="scp_logo_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="/images/store/scp-shirt_transparent(500x446).png"></a>
+          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard/wiz_of_wyandotte_logo.png"></a>
+          <ul class="slider">
+            <li><img src="images/store/wizard/shirt.png"></li>
+            <li><img src="images/store/wizard/sticker.png"></li>
+            <li><img src="images/store/wizard/mug.png"></li>
+          </ul>
         </div>
-        <div class="wizard_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard_of_wyandotte_tshirt(transparent)(500x443).png"></a>
+        <div>       
+          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard/wiz_of_wyandotte_logo.png"></a>
+          <ul class="slider">
+            <li><img src="images/store/spark/shirt.png"></li>
+            <li><img src="images/store/spark/sticker.png"></li>
+            <li><img src="images/store/spark/mug.png"></li>
+          </ul>
         </div>
-        <div class="spark_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29084320-no-spark-logo?store_id=1274390"><img src="/images/store/spark_shirt_transparent(500x500).png"></a>
-        </div>
-        <div class="honda_guy_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29106307-big_honda_guy?store_id=1274390"><img src="images/store/honda_guy_shirt(transparent)(500x446).png"></a>
-        </div>
-        <div class="yamaha_guy_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29106308-big_yamaha_guy?store_id=1274390"><img src="images/store/yamaha_guy_shirt_(transparent)(500x484).png"></a>
-        </div>
-        <div class="kawi_guy_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29106311-big_kawi_guy?store_id=1274390"><img src="images/store/kawasaki_guy_shirt(transparent)(500x486).png"></a>
-        </div>
-        <div class="ktm_guy_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29106309-big_ktm_guy?store_id=1274390"><img src="images/store/ktm_guy_shirt(transparent)(500x484).png"></a>
-        </div>
-        <div class="suzuki_guy_tshirt">
-          <a href="https://www.teepublic.com/t-shirt/29084496-suzuki-guy?store_id=1274390"><img src="images/store/suzuki_guy_shirt_(transparent)(500x486).png"></a>
-        </div>
-      -->
       </div>  
     </main>
     <footer>
@@ -68,8 +51,10 @@
     <script>
       //TODO need to link to one js file that include multiple js file using jquery
       $(document).ready(function(){
-        $('.bxslider').bxSlider(
-          adaptiveHeight = true
+        $('.slider').bxSlider(
+          adaptiveHeight = true,
+          touchEnabled = true,
+          auto = true
         );
       });
     </script>
