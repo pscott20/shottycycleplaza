@@ -32,6 +32,7 @@ ul.bxslider {
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px rgb(78, 77, 77);
   background: rgb(78, 77, 77);
+  border-radius: 1rem;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {

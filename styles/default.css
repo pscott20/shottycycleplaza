@@ -171,11 +171,13 @@ table
     text-align: center;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) 
+{
     background-color: #b2b2b2;
   }
 
-tr:nth-child(odd) {
+tr:nth-child(odd) 
+{
     background-color: #ffffff;
   }
 
@@ -184,23 +186,20 @@ th
     background-color: #ef6b36;
 }
 
-/*Store Page*/
-.container-store {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-bottom: 6rem;
-    flex-wrap: nowrap;
-    width: 45%;
-}
-
-.container-store > div
+/*Store Page */
+.container-store
 {
-    margin: 2rem;
-    padding: 1rem 1rem 0 1rem;
-    background-color: rgb(78, 77, 77);
-    border-radius: 10rem;
+    margin: 10rem 20rem 20rem 20rem;
 }
 
+.link-image
+{
+    margin-bottom: 1rem;
+}
 
+.link-image:hover
+{
+    transform: scale(0.95);
+    
+}
 

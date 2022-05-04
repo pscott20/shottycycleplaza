@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./styles/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="styles/jquery.bxslider.css">
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="scripts/jquery.bxslider.js"></script>
   </head>
   <body>
     <header>
@@ -20,28 +22,34 @@
       <h1>Merchandise</h1>
       <div class="container-store">
         <div>
-          <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="images/store/scp/scp_logo.png"></a>
-          <ul class="slider">
-            <li><img src="/images/store/scp/shirt.png"></li>
-            <li><img src="/images/store/scp/sticker.png"></li>
-            <li><img src="/images/store/scp/mug.png"></li>
-          </ul>
+          <a href="https://www.teepublic.com/t-shirt/29083625-scp-logo?store_id=1274390"><img src="images/store/scp/scp_logo.png" class="link-image" title="Link to Store"></a>
+          <div class="slider">
+            <ul id="slider1">
+              <li><figure><img src="/images/store/scp/shirt.png"><figcaption>Mens T-Shirt</figcaption></figure></li>
+              <li><figure></figure><img src="/images/store/scp/sticker.png"><figcaption>Sticker</figcaption></figure></li>
+              <li><figure></figure><img src="/images/store/scp/mug.png"><figcaption>Mug</figcaption></figure></li>
+            </ul>
+          </div>
         </div>
         <div>       
-          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard/wiz_of_wyandotte_logo.png"></a>
-          <ul class="slider">
-            <li><img src="images/store/wizard/shirt.png"></li>
-            <li><img src="images/store/wizard/sticker.png"></li>
-            <li><img src="images/store/wizard/mug.png"></li>
-          </ul>
+          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390" class="link-image"><img src="images/store/wizard/wiz_of_wyandotte_logo.png" class="link-image" title="Link to Store"></a>
+          <div class="slider">
+            <ul id="slider2">
+              <li><figure><img src="images/store/wizard/shirt.png"><figcaption>Mens T-Shirt</figcaption></figure></li>
+              <li><figure><img src="images/store/wizard/sticker.png"><figcaption>Sticker</figcaption></figure></li>
+              <li><figure><img src="images/store/wizard/mug.png"><figcaption>Mug</figcaption></figure></li>
+            </ul>
+          </div>
         </div>
         <div>       
-          <a href="https://www.teepublic.com/t-shirt/29101823-wizard-of-wyandotte-logo?store_id=1274390"><img src="images/store/wizard/wiz_of_wyandotte_logo.png"></a>
-          <ul class="slider">
-            <li><img src="images/store/spark/shirt.png"></li>
-            <li><img src="images/store/spark/sticker.png"></li>
-            <li><img src="images/store/spark/mug.png"></li>
-          </ul>
+          <a href="https://www.teepublic.com/t-shirt/29084320-no-spark-logo?store_id=1274390"><img src="images/store//spark/spark_logo.png" class="link-image" title="Link to Store"></a>
+          <div class="slider">
+            <ul id="slider3">
+              <li><figure><img src="images/store/spark/shirt.png"><figcaption>Mens T-Shirt</figcaption></figure></li>
+              <li><figure><img src="images/store/spark/sticker.png"><figcaption>Sticker</figcaption></figure></li>
+              <li><figure><img src="images/store/spark/mug.png"><figcaption>Mug</figcaption></figure></li>
+            </ul>
+          </div>
         </div>
       </div>  
     </main>
@@ -51,10 +59,18 @@
     <script>
       //TODO need to link to one js file that include multiple js file using jquery
       $(document).ready(function(){
-        $('.slider').bxSlider(
-          adaptiveHeight = true,
-          touchEnabled = true,
-          auto = true
+        $('#slider1').bxSlider(
+          caption = true
+        );
+      });
+      $(document).ready(function(){
+        $('#slider2').bxSlider( 
+          caption = true
+        );
+      });
+      $(document).ready(function(){
+        $('#slider3').bxSlider(
+          caption = true
         );
       });
     </script>
