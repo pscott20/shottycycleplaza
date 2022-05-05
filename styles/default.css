@@ -12,7 +12,7 @@ honda #c8102e / kawasaki #73A84A / suzuki #F7CD36 / yamaha #0e4bef
 {
     box-sizing: border-box; /*If I add a border to a box then the border is included in the calculated size of the box.*/
     font-family: 'Baumans', 'Franklin Gothic Medium', sans-serif;
-    color: #e4e1e1;
+    color: #070707;
     text-align: center;
     margin: 0; /*This and padding gives us control over margins and padding*/
     padding: 0;
@@ -92,7 +92,7 @@ figure
   
 .about-items.about-text {
     
-    background-color: #c1552a;
+    background-color: #d96232;
     padding-bottom: 1rem;
     border-radius: 2rem;
     padding-left: 1rem; 
@@ -158,11 +158,17 @@ ul.projects_list
 {
     display: flex;
     flex-direction: column;
-    margin: 3%;
+    margin: 0 40rem 5rem 40rem;
     background-color: #999898;
     border-radius: 15px;
     padding: 20px;
-    width: 50%;
+    align-items: center;
+}
+
+body > main > div > div.services-form > form > div > input[type=submit]:nth-child(15)
+{
+    margin-top: 0.5rem;
+    color: black;
 }
 
 table
