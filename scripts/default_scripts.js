@@ -73,12 +73,6 @@ setReviews = (e) =>
   reviews.splice(5);
   localStorage.setItem('reviews', JSON.stringify(reviews));
 
-  //reviewList.innerHTML = reviews.map(reviewsArray => 
-   // {
-     // return `<li>Name: ${reviewsArray.reviewName} | Review: "${reviewsArray.reviewText}"</li>`;
-    //})
-  //.join("");
-
   submit.disabled;
 }
 
