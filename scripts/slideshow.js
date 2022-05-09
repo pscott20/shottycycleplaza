@@ -1,6 +1,7 @@
 let slideIndex = 0;
 showSlides();
 
+//Slideshow function on index.html
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("slideshow-slides");

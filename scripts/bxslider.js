@@ -1,8 +1,8 @@
-//bxSlider used on Store page
+//bxSlider used on Store page. The page features multiple bxsliders
 $(document).ready(function(){
     $('#slider1').bxSlider(
-      caption = true,
-      maxSlide = 1
+      caption = true, //Adds captions
+      maxSlide = 1 //Limits the number of slides viewed to 1
     );
   });
   $(document).ready(function(){

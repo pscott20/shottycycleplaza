@@ -6,7 +6,7 @@ const year = document.getElementById('year');
 const mileage = document.getElementById('mileage');
 const oil = document.getElementById('oil');
 
-const reviewsArray = 
+const reviewsArray = //Create array for data entered in Review Form
 {
 reviewName: reviewName.value,
 reviewText: reviewText.value    
@@ -15,7 +15,7 @@ reviewText: reviewText.value
 const reviews = JSON.parse(localStorage.getItem('reviewArray')) || []; //Converts the JSON string into an object or returns an empty array
 
 //Customers Page
-const reviewTable = document.querySelector("#review-table > tbody");
+const reviewTable = document.querySelector("#review-table > tbody"); //Query the tbody
 
 //Function to load the reviews from reviews.json
 function loadReviews ()
@@ -42,12 +42,11 @@ function addReviewsToTable (json)
             td.textContent = cell;
             tr.appendChild(td);
         });
-
         reviewTable.appendChild(tr);
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {loadReviews(); });
+document.addEventListener("DOMContentLoaded", () => {loadReviews(); }); //Once DOM is loaded loadReviews() populates the table
 
 
 //Only activate button once both forms have entries. Only allow the user to submit one entry
@@ -55,27 +54,22 @@ reviewText.addEventListener("keyup", () => {
   submit.disabled = !reviewText.value;
 });
 
-
-//Function to set and get reviews in Local Storage
+//Function to set and get reviews in Local Storage as an array
 setReviews = (e) => 
 {
   e.preventDefault();
-
   const reviewsArray = 
   {
     reviewName: reviewName.value,
     reviewText: reviewText.value    
   };
-
   reviews.push(reviewsArray);
   reviews.splice(5);
   localStorage.setItem('reviews', JSON.stringify(reviews));
-
   submit.disabled;
 }
 
-
-//Function to save service requests in an array
+//Function to save service requests in local storage in an array
 serviceForm = (e) =>
 {
   let serviceArray = []

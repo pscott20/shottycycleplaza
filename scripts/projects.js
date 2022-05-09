@@ -1,3 +1,4 @@
+//Image swap functions
 $(document).ready(function()
 {
     // preload the image for each link
