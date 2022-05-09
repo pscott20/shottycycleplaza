@@ -16,6 +16,42 @@ const reviews = JSON.parse(localStorage.getItem('reviewArray')) || []; //Convert
 
 //Customers Page
 
+const reviewTable = document.querySelector("#review-table > tbody");
+
+//Function to load the reviews from reviews.json
+function loadReviews ()
+{
+    const review = new XMLHttpRequest();
+
+    review.open("get", "reviews.json");
+    review.onload = () =>
+    {
+        const json = JSON.parse(review.responseText); 
+        addReviewsToTable(json);
+    };
+    review.send();
+}
+
+//Adds the reviews to table in customers.html
+function addReviewsToTable (json)
+{
+    json.forEach((row) => 
+    {
+        const tr = document.createElement("tr");
+        row.forEach((cell) =>
+        {
+            const td = document.createElement("td");
+            td.textContent = cell;
+            tr.appendChild(td);
+        });
+
+        reviewTable.appendChild(tr);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {loadReviews(); });
+
+
 //Only activate button once both forms have entries. Only allow the user to submit one entry
 reviewText.addEventListener("keyup", () => {
   submit.disabled = !reviewText.value;
@@ -37,14 +73,15 @@ setReviews = (e) =>
   reviews.splice(5);
   localStorage.setItem('reviews', JSON.stringify(reviews));
 
-  reviewList.innerHTML = reviews.map(reviewsArray => 
-    {
-      return `<li>Name: ${reviewsArray.reviewName} | Review: "${reviewsArray.reviewText}"</li>`;
-    })
-  .join("");
+  //reviewList.innerHTML = reviews.map(reviewsArray => 
+   // {
+     // return `<li>Name: ${reviewsArray.reviewName} | Review: "${reviewsArray.reviewText}"</li>`;
+    //})
+  //.join("");
 
   submit.disabled;
 }
+
 
 //Function to save service requests in an array
 serviceForm = (e) =>

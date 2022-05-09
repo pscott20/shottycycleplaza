@@ -17,7 +17,7 @@
       <h1>Customers</h1>
       <div class="customers-container">
         <div class="review-form">
-          <h3>Reviews</h3>
+          <h3>Submit Your Review</h3>
           <form id="reviewForm">
             <input type="text" id="reviewText" name="reviewText" placeholder="Enter your review">
             <br>
@@ -27,10 +27,24 @@
           </form>
         </div>
         <div>
+            <h3>Past Reviews</h3>
+            <table id="review-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Review</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
           <ul id="reviewList"></ul>
         </div>
         <div class="services-form">
-          <h3>Request Service</h3>
+          <h3>Submit to Request Service</h3>
           <form>
             <label for="make">Make:</label>
             <br>
@@ -50,7 +64,7 @@
             <br>
             <br>
             <div class="select-services">
-              <label for="service">Select Services</label>
+              <label for="service"><strong>Select Services</strong></label>
               <br>
               <label for="oil">Oil & Filter Change</label>
               <input type="checkbox" id="oil" name="oil" value="oil+filter_change" >
