@@ -1,28 +1,26 @@
 const reviewText = document.getElementById('reviewText');
 const reviewName = document.getElementById('reviewName');
-
 const make = document.getElementById('make');
 const model = document.getElementById('model');
 const year = document.getElementById('year');
 const mileage = document.getElementById('mileage');
 const oil = document.getElementById('oil');
 
-const reviewsArray = {
-  reviewName: reviewName.value,
-  reviewText: reviewText.value    
+const reviewsArray = 
+{
+reviewName: reviewName.value,
+reviewText: reviewText.value    
 };
 
 const reviews = JSON.parse(localStorage.getItem('reviewArray')) || []; //Converts the JSON string into an object or returns an empty array
 
 //Customers Page
-
 const reviewTable = document.querySelector("#review-table > tbody");
 
 //Function to load the reviews from reviews.json
 function loadReviews ()
 {
     const review = new XMLHttpRequest();
-
     review.open("get", "reviews.json");
     review.onload = () =>
     {
