@@ -1,5 +1,5 @@
 /*
-Brands Colors
+Brand Colors
 honda #c8102e / kawasaki #73A84A / suzuki #F7CD36 / yamaha #0e4bef
 */
 :root
@@ -63,18 +63,21 @@ figure
   position: absolute;
 }
 
-.fade {
+.fade 
+{
   animation-name: fade;
   animation-duration: 2.0s;
 }
 
-@keyframes fade {
+@keyframes fade 
+{
   from {opacity: .4}
   to {opacity: 1}
 }
 
 /*About Page*/
-.about-container {
+.about-container 
+{
     display: flex;
     overflow: scroll;
     margin-bottom: 15rem;
@@ -90,7 +93,8 @@ figure
     margin: 1rem;
 }
   
-.about-items.about-text {
+.about-items.about-text 
+{
     
     background-color: #d96232;
     padding-bottom: 1rem;
@@ -187,11 +191,13 @@ tr:nth-child(even)
 tr:nth-child(odd) 
 {
     background-color: #ffffff;
-  }
+}
+
 #review-table
 {
     align-items: center;
 }
+
 th
 {
     background-color: #ffffff;
